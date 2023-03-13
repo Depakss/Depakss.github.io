@@ -334,7 +334,7 @@ section img {
   }
 
   header ul li {
-    margin-left: -5px;
+    margin-left: -10px;
   }
 
   #text {
@@ -371,11 +371,13 @@ section img {
   .btns {
     position: absolute;
     left: auto;
+    margin-bottom: 100px;
   }
 
   .imgbox {
     position: block;
     width: auto;
+    margin-top: 20%;
   }
 
   .imgbox img {
