@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Depaks Portofolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">Depaks<b>.</b></a>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#aboutme">About</a></li>
+        <li><a href="#sec">Project</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <section>
+      <img src="images/Background.jpg" id="background" />
+      <h2 id="text">Welcome To My Portofolio</h2>
+      <a href="#aboutme" id="btn">Leggo</a>
+    </section>
+
+    <div class="wrapper" id="aboutme" data-aos="fade-up">
+      <div class="cols cols0">
+        <h2>About me</h2>
+        <span class="topline">Hello!</span>
+        <h1>I'm <span class="multitext"></span></h1>
+        <p>
+          Daffa Naufal Fakhrizi is a fresh graduate from the informatics engineering at the Indonesian Computer University. Have an interest in having a career in technology such as Website Development. im also also interest and experienced
+          in photography, videography, and editing. You can check my resume below!
+        </p>
+        <div class="btns">
+          <a href="cv/Daffa Naufal Fakhrizi_CV.pdf"><button>Download CV</button></a>
+        </div>
+      </div>
+      <div class="cols cols1"></div>
+      <div class="imgbox">
+        <img src="images/blob.png" alt="" id="splash" />
+        <img src="images/daffa.png" alt="" />
+      </div>
+    </div>
+
+    <div class="sec" id="sec" data-aos="fade-up">
+      <h2>Project</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt sed blanditiis architecto recusandae ad hic, sequi dolorum, itaque, assumenda accusantium? Eos quisquam quis voluptas modi culpa maxime vitae sequi.</p>
+      <br /><br />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur consectetur recusandae, itaque neque aut harum possimus unde similique ullam in labore tempora ipsum illum quo quasi libero. Alias, ducimus eos magnam dolor fugiat
+        voluptatem nulla ipsa illum dolore deleniti cumque eveniet rerum iure ut architecto aut, dicta hic libero ad distinctio. Id aliquid impedit sit facere rem error repudiandae quia sint hic? Unde maiores labore odit doloribus velit
+        accusantium, dignissimos veritatis debitis! Ipsum cumque veniam eligendi minima neque, exercitationem recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum nesciunt sed blanditiis architecto recusandae ad hic,
+        sequi dolorum, itaque, assumenda accusantium? Eos quisquam quis voluptas modi culpa maxime vitae sequi.
+      </p>
+    </div>
+
+    <div class="blog" id="blog" data-aos="fade-up">
+      <h2>Blog</h2>
+      <h2>Coming soon!</h2>
+      <br /><br />
+    </div>
+
+    <div class="contact" id="contact" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p></p>
+      <br /><br />
+      <div class="links">
+        <a href="mailto: daffanaufalf@gmail.com"><i class="fa fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/daffanaufalf/"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/daffanaufalf"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Depakss"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Made with <i class="fa fa-heart" aria-hidden="true" style="color: #be1931"></i> by Depaks</p>
+      <p>&copy; 2023.</p>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script>
+      var typingEffect = new Typed(".multitext", {
+        strings: ["Web Developer"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1500,
+      });
+    </script>
+
+    <script>
+      let text = document.getElementById("text");
+      let btn = document.getElementById("btn");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        btn.style.marginBottom = value * 0.5 + "px";
+        text.style.marginBottom = value * 0.5 + "px";
+      });
+    </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #2e2116;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+}
+
+header .logo {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+
+header .logo b {
+  font-size: 50px;
+  color: #b700ff;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  list-style: none;
+  margin-left: 20px;
+}
+
+header ul li a {
+  text-decoration: none;
+  padding: 6px 15px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  background: #fff;
+  color: #2e2116;
+}
+
+section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #2e2116, transparent);
+  z-index: 1000;
+}
+
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#text {
+  position: absolute;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 4vw;
+  z-index: 9;
+}
+
+#btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: #fff;
+  color: #2e2116;
+  font-size: 1.5em;
+  z-index: 9;
+  transform: translateY(100px);
+}
+
+#btn:hover {
+  background-color: #c281ff;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+  overflow: hidden;
+}
+
+.cols {
+  width: 50%;
+}
+
+.cols0 {
+  width: 60%;
+  z-index: 1;
+}
+
+.topline {
+  display: block;
+  position: relative;
+  font-size: 35px;
+  letter-spacing: 5px;
+  color: #fff;
+}
+
+.topline::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 45px;
+  bottom: 10px;
+  background-color: #c281ff;
+}
+
+.wrapper h2 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.wrapper h1 {
+  display: block;
+  width: 150%;
+  font-size: 4em;
+  font-weight: 900;
+  color: #98dbff;
+}
+
+.multitext {
+  color: #b700ff;
+  text-transform: capitalize;
+}
+
+.wrapper p {
+  display: block;
+  width: 150%;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+.btns {
+  width: 100%;
+  position: relative;
+  left: 150px;
+}
+
+.wrapper button {
+  outline: none;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 400;
+  background: #fff;
+  color: #2e2116;
+  padding: 8px 14px;
+  margin: 40px 5px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+.wrapper button:hover {
+  background-color: #b700ff;
+}
+
+.imgbox {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.imgbox img {
+  position: relative;
+  height: 100%;
+  top: 200px;
+  right: 50px;
+}
+.imgbox img:hover {
+  animation: animateUser 4s ease-in-out infinite;
+}
+
+@keyframes animateUser {
+  50% {
+    right: 10px;
+    top: 100px;
+  }
+}
+
+.imgbox #splash {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160%;
+  filter: saturate(200%);
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  50% {
+    top: 600px;
+    left: 400px;
+    width: 150%;
+  }
+}
+
+.sec {
+  position: relative;
+  padding: 100px;
+  background: #fca559;
+}
+
+.sec h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sec p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.blog {
+  position: relative;
+  padding: 100px;
+  background: #642f00;
+}
+
+.blog h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.blog p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.contact {
+  position: relative;
+  padding: 100px;
+  background: #947c68;
+  width: 100%;
+  text-align: center;
+}
+
+.contact h2 {
+  text-align: center;
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contact p {
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.contact .links h3 {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.contact .links a {
+  font-size: 40px;
+  color: #fff;
+  padding: 30px;
+}
+
+.contact .links a:hover {
+  color: #b700ff;
+}
+
+.footer {
+  position: relative;
+  background: #947c68;
+}
+
+.footer p {
+  text-align: center;
+  color: #fff;
+}
+
+@media only screen and (max-width: 950px) {
+  header {
+    padding: 10px 10px;
+    display: block;
+  }
+
+  header ul {
+    padding: 10px;
+  }
+
+  header ul li {
+    margin-left: -5px;
+  }
+
+  #text {
+    font-size: 7vw;
+  }
+
+  .wrapper {
+    padding: 10%;
+    display: block;
+  }
+
+  .wrapper h2 {
+    font-size: 1.5em;
+  }
+
+  .topline {
+    font-size: 20px;
+  }
+
+  .topline::after {
+    height: 5px;
+    width: 35px;
+    bottom: 7px;
+  }
+
+  .wrapper p {
+    font-size: 0.8em;
+  }
+
+  .wrapper h1 {
+    font-size: 1.5em;
+  }
+
+  .btns {
+    position: absolute;
+    left: auto;
+  }
+
+  .imgbox {
+    position: block;
+    width: auto;
+  }
+
+  .imgbox img {
+    position: block;
+    margin-left: 15%;
+    margin-right: auto;
+    width: 100%;
+    top: 130px;
+  }
+
+  @keyframes animateUser {
+    50% {
+      right: 20px;
+      top: 110px;
+    }
+  }
+
+  .imgbox #splash {
+    position: block;
+    margin-left: 15%;
+    margin-right: auto;
+    width: 140%;
+    top: 80%;
+    left: 40%;
+  }
+
+  @keyframes animate {
+    50% {
+      top: 330px;
+      left: 70px;
+      right: 50px;
+      width: 100%;
+    }
+  }
+
+  .sec {
+    padding: 10%;
+  }
+
+  .sec p {
+    font-size: 1em;
+    text-align: justify;
+    text-justify: auto;
+  }
+
+  .blog {
+    padding: 10%;
+  }
+
+  .contact {
+    padding: 10%;
+  }
+
+  .contact .links a {
+    padding: 20px;
+  }
+}
